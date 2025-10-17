@@ -232,11 +232,6 @@ void hnsw_search(
 
 } // anonymous namespace
 
-
-void IndexBinaryHNSW::train(idx_t n, const void* x, NumericType numeric_type) {
-    IndexBinary::train(n, x, numeric_type);
-}
-
 void IndexBinaryHNSW::search(
         idx_t n,
         const uint8_t* x,
